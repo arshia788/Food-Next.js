@@ -4,6 +4,7 @@ import About from '../modules/About'
 import Companies from '../modules/Companies'
 import Instruction from '../modules/Instruction'
 import Guide from '../modules/Guide'
+import Restriction from '../modules/Restriction'
 
 
 export default function HomePage() {
@@ -15,6 +16,7 @@ export default function HomePage() {
         <Companies />
         <Instruction />
         <Guide />
+        <Restriction />
     </div>
   )
 };

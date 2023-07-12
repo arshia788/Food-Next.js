@@ -4,7 +4,8 @@ import React from 'react'
 export default function Layout({ children }) {
     return (
         <>
-            <header className='w-6/12 flex justify-between items-center mx-auto mt-4'>
+            <header className='xs:w-full sm:w-6/12 xs:px-4 
+            flex justify-between items-center mx-auto mt-4'>
 
                 <h1 className='font-semibold text-green-700 text-lg'>
                     <Link href='/'>BotoFood</Link>
@@ -17,7 +18,7 @@ export default function Layout({ children }) {
 
             </header>
 
-            <div className='w-6/12 m-auto'>
+            <div className='xs:w-full sm:w-6/12 m-auto xs:px-4'>
                 {children}
             </div>
 

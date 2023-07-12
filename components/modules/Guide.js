@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Guide() {
   return (
-    <div className='flex justify-between my-8'>
+    <div className='flex justify-between my-8 xs:gap-x-2'>
         <Link 
         className='shadow-md shadow-gray-400 rounded text-center p-2 w-32'
         href="/menu">Menu</Link>
