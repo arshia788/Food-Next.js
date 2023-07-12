@@ -16,7 +16,7 @@ export default function Card({ data }) {
         <p className="text-green-500 text-sm font-semibold">{data.name}</p>
 
         <div className='flex items-center'>
-          <p>{data.details[0].Cuisine}</p>
+          <p className='text-sm font-semibold'>{data.details[0].Cuisine}</p>
           <Location />
         </div>
       </div>
@@ -32,10 +32,11 @@ export default function Card({ data }) {
         }
 
       </div>
-        {data.discount ? <div className='bg-red-500 text-white absolute top-4 left-3
+        {data.discount ? <div 
+        className='bg-red-500 text-white absolute top-4 left-3
         rounded w-fit'> {data.discount} %</div> : null }
 
-        <button className='w-full bg-green-500 text-white'
+        <button className='w-full bg-green-500 text-white mt-4'
         >
           <Link href={`/menu/${data.id}`}
 >
