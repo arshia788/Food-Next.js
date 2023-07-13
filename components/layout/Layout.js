@@ -18,11 +18,13 @@ export default function Layout({ children }) {
 
             </header>
 
-            <div className='xs:w-full sm:w-6/12 m-auto xs:px-4'>
+            <div className='xs:w-full sm:w-6/12 m-auto xs:px-4 min-h-screen'>
                 {children}
             </div>
 
-            <footer className='bg-green-700 text-center text-zinc-50 p-0.5'>
+            <footer className='bg-green-700 text-center
+            
+            text-zinc-50 p-0.5'>
                 <p>This a food project with SSR&SSG</p>
             </footer>
 
