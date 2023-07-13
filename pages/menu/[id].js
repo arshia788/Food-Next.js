@@ -1,7 +1,8 @@
 import { useRouter } from 'next/router'
 import React from 'react'
+import DetailsPage from '../../components/templates/DetailsPage';
 
-export default function Details() {
+export default function Details({data}) {
 
     const router= useRouter();
 
@@ -9,7 +10,9 @@ export default function Details() {
         return <h2>Is-Loading...</h2>
     }
     return (
-        <div></div>
+        <div>
+            <DetailsPage data={data}/>
+        </div>
     )
 }
 
@@ -29,7 +32,6 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
 
     const { params } = context
-    console.log(params);
 
     const res = await fetch(`http://localhost:4000/data/${params.id}`)
     const data = await res.json()
