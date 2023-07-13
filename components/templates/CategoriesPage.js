@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 import { useState } from "react"
 
-export default function CategoriesPage() {
+export default function CategoriesPage({data}) {
 
     const router= useRouter();
     const [query, setQuery]= useState({
@@ -14,7 +14,6 @@ export default function CategoriesPage() {
 
     const searchHandler=()=>{
         router.push(
-
             {pathname:'/categories', query}
         )
     }
@@ -25,7 +24,7 @@ export default function CategoriesPage() {
                 className="font-bold text-xl border-b-2 border-green-500 w-fit"
             >Categories</h2>
 
-            <div className="mt-8">
+            <div className="my-8">
                 <div className="flex items-center justify-between">
                     <select 
                     value={query.difficulty}
@@ -45,7 +44,7 @@ export default function CategoriesPage() {
                     className="rounded  text-green-500 p-1">
                         <option value="">Cooking Time</option>
                         <option value="more">More than 30min</option>
-                        <option value="less">Less tan 30min</option>
+                        <option value="less">Less than 30min</option>
 
                     </select>
 
@@ -55,6 +54,12 @@ export default function CategoriesPage() {
                     >Search</button>
                 </div>
             </div>
+
+            <div>
+                
+            </div>
+
+
 
         </div>
     )
