@@ -12,7 +12,7 @@ export default function Card({ data }) {
       />
 
       <div className="flex justify-between items-center my-4">
-        <p className="text-green-500 text-sm font-semibold">{data.name}</p>
+        <p className="text-orange-500 text-sm font-semibold">{data.name}</p>
 
         <div className='flex items-center'>
           <p className='text-sm font-semibold'>{data.details[0].Cuisine}</p>
@@ -35,7 +35,7 @@ export default function Card({ data }) {
         className='bg-red-500 text-white absolute top-4 left-3
         rounded w-fit'> {data.discount} %</div> : null }
 
-        <button className='w-full bg-green-500 text-white mt-4'
+        <button className='w-full bg-orange-500 text-white mt-4'
         >
           <Link href={`/menu/${data.id}`}
 >

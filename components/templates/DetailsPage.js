@@ -9,7 +9,7 @@ export default function DetailsPage({ data }) {
     return (
         <div className='my-8'>
             <h2
-                className='border-b-2 border-green-500 w-fit font-bold text-xl'
+                className='border-b-2 border-orange-500 w-fit font-bold text-xl'
             >Details</h2>
 
             <div className='flex flex-col my-6'>
@@ -20,7 +20,7 @@ export default function DetailsPage({ data }) {
                     />
                     {/* right on pic */}
                     <div className='ml-12'>
-                        <p className='font-semibold text-lg text-green-500'>{name}</p>
+                        <p className='font-semibold text-lg text-orange-500'>{name}</p>
                         <div className='flex items-center mt-1 text-gray-500'>
                             <Location />
                             <p>{details[0].Cuisine}</p>
@@ -44,13 +44,13 @@ export default function DetailsPage({ data }) {
 
                 {/* Details */}
                 <div>
-                    <h2 className='text-green-500 font-bold text-xl'>Details</h2>
+                    <h2 className='text-orange-500 font-bold text-xl'>Details</h2>
                     <ul className='pl-4 '>
                         {
                             details.map((item, index) => {
                                 return (
                                     <li key={index} className="font-semibold relative flex items-center
-                                    before:content-['o'] before:text-green-500 " >
+                                    before:content-['o'] before:text-orange-500 " >
                                         <p className='ml-2'>{Object.keys(item)[0]}: </p>
                                         <p>{Object.values(item)[0]}</p>
                                     </li>
@@ -62,12 +62,12 @@ export default function DetailsPage({ data }) {
 
                 {/* ingredients */}
                 <div>
-                    <h2 className='text-green-500 font-bold mt-8 text-xl'>ingredients</h2>
+                    <h2 className='text-orange-500 font-bold mt-8 text-xl'>ingredients</h2>
                     <ul className='pl-4'>
                         {ingredients.map((item, index) => {
                             return (
                                 <li key={index} className="font-semibold relative flex items-center
-                            before:content-['o'] before:text-green-500
+                            before:content-['o'] before:text-orange-500
                             
                             ">
                                     <p className='ml-2'>{item}</p>
@@ -80,14 +80,14 @@ export default function DetailsPage({ data }) {
                 
                 {/* Recipe */}
                 <div>
-                    <h2 className='text-green-500 font-bold mt-8 mb-4 text-xl'>Recipe</h2>
+                    <h2 className='text-orange-500 font-bold mt-8 mb-4 text-xl'>Recipe</h2>
                     <ul className=''>
                         {
                             recipe.map((item,index)=>{
                                 return(
                                     <li key={index} 
                                     className=
-                                    {index %2 ?'bg-green-500 flex p-2' :'bg-green-400 flex p-2'}
+                                    {index %2 ?'bg-orange-500 flex p-2' :'bg-orange-400 flex p-2'}
                                     >
                                         <p>{index + 1}</p>
                                         <p className='ml-2'>{item}</p>

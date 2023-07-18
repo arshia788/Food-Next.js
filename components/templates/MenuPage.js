@@ -5,7 +5,7 @@ export default function MenuPage({ data }) {
     return (
         <div className="my-8">
             <h2 className="font-bold border-b-4 
-        border-green-500 text-xl w-fit mb-4">Menu</h2>
+        border-orange-500 text-xl w-fit mb-4">Menu</h2>
 
             <ul className="grid grid-cols-12 gap-4">
                 {

@@ -7,7 +7,7 @@ function Attributes() {
   return (
     <div>
       <h3
-      className='text-green-500 text-xl font-bold mb-4 xs:text-center'
+      className='text-orange-500 text-xl font-bold mb-4 xs:text-center'
       >Why-us?</h3>
 
       <div className='xs:flex xs:flex-col xs:gap-y-8

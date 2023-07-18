@@ -13,9 +13,8 @@ export default function Banner() {
 
                 <h2
                     className='font-bold mb-4
-                border-b-2 w-fit text-2xl xs:text-center 
-                sm:ml-0
-                 border-green-500'>BotoFood</h2>
+                text-2xl xs:text-center 
+                sm:ml-0'> <span className='text-orange-500'>Next</span> Food</h2>
 
                 <p className='mb-4 font-medium text-lg'>Food Delivery and Takeout!</p>
                 <p className='text-gray-500 mb-3'>
@@ -25,7 +24,7 @@ export default function Banner() {
                 </p>
 
                 <Link href='/menu'
-                    className='bg-green-500 w-fit text-white 
+                    className='bg-orange-500 w-fit text-white 
                 p-1 rounded  my-3 cursor-pointer'
                 >See-All</Link>
 

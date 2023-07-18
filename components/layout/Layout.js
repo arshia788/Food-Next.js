@@ -7,8 +7,8 @@ export default function Layout({ children }) {
             <header className='xs:w-full sm:w-6/12 xs:px-4 
             flex justify-between items-center mx-auto mt-4'>
 
-                <h1 className='font-semibold text-green-700 text-lg'>
-                    <Link href='/'>BotoFood</Link>
+                <h1 className='font-semibold text-orange-500 text-lg'>
+                    <Link href='/'>NextFood</Link>
                 </h1>
 
                 <ul className='flex items-center gap-x-4'>
@@ -22,7 +22,7 @@ export default function Layout({ children }) {
                 {children}
             </div>
 
-            <footer className='bg-green-700 text-center
+            <footer className='bg-orange-500 text-center
             
             text-zinc-50 p-0.5'>
                 <p>This a food project with SSR&SSG</p>

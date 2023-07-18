@@ -34,7 +34,7 @@ export default function CategoriesPage({ data }) {
         <div className="my-8">
 
             <h2
-                className="font-bold text-xl border-b-2 border-green-500 w-fit"
+                className="font-bold text-xl border-b-2 border-orange-500 w-fit"
             >Categories</h2>
 
             <div className="my-8">
@@ -43,7 +43,7 @@ export default function CategoriesPage({ data }) {
                         value={query.difficulty}
                         name="difficulty"
                         onChange={changeHandler}
-                        className="rounded  text-green-500 p-1">
+                        className="rounded  text-orange-500 p-1">
                         <option value="">Difficulty</option>
                         <option value="Easy">Easy</option>
                         <option value="Medium">Medium</option>
@@ -54,7 +54,7 @@ export default function CategoriesPage({ data }) {
                         value={query.time}
                         name="time"
                         onChange={changeHandler}
-                        className="rounded  text-green-500 p-1">
+                        className="rounded  text-orange-500 p-1">
                         <option value="">Cooking Time</option>
                         <option value="more">More than 30min</option>
                         <option value="less">Less than 30min</option>
@@ -63,7 +63,7 @@ export default function CategoriesPage({ data }) {
 
                     <button
                         onClick={searchHandler}
-                        className="bg-green-500 text-white rounded px-4 py-1"
+                        className="bg-orange-500 text-white rounded px-4 py-1"
                     >Search</button>
                 </div>
             </div>
