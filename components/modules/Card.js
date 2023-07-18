@@ -4,7 +4,6 @@ import Link from 'next/link';
 
 export default function Card({ data }) {
 
-  console.log(data);
 
   return (
     <div className="shadow-md shadow-gray-400 p-2 my-4 rounded relative">

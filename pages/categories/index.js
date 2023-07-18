@@ -13,7 +13,7 @@ export default function Categories({data}) {
 export async function getServerSideProps(context) {
   const { query: { difficulty, time } } = context;
 
-  const res = await fetch('http://localhost:4000/data')
+  const res = await fetch(`${process.env.BASE_URL}/data`)
   const data = await res.json()
 
 
@@ -34,8 +34,6 @@ export async function getServerSideProps(context) {
       }
     })
 
-    console.log(difficultyResult);
-    console.log(timeResult);
 
     if(time && difficulty && timeResult.length && difficultyResult.length){
       return item

@@ -18,7 +18,7 @@ export default function Details({data}) {
 
 export async function getStaticPaths() {
 
-    const res = await fetch('http://localhost:4000/data')
+    const res = await fetch (`${process.env.BASE_URL}/data`)
     const data = await res.json()
     const newData = data.slice(0, 4);
     const paths = newData.map(item => ({ params: { id: item.id.toString() } }))
@@ -33,7 +33,7 @@ export async function getStaticProps(context) {
 
     const { params } = context
 
-    const res = await fetch(`http://localhost:4000/data/${params.id}`)
+    const res = await fetch(`${process.env.BASE_URL}/data/${params.id}`)
     const data = await res.json()
 
     if (!data.id) {
@@ -46,6 +46,8 @@ export async function getStaticProps(context) {
         props: {
             data
         },
+        revalidate:+process.env.REVALIDATE
+
     }
 }
 

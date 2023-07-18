@@ -75,6 +75,7 @@ export default function CategoriesPage({ data }) {
                     data.map(item => {
                         return (
                             <div
+                                key={item.id}
                                 className="xs:col-span-12 sm:col-span-6 md:col-span-4"
                             >
                                 <Card data={item} />
