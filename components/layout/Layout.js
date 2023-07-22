@@ -25,7 +25,7 @@ export default function Layout({ children }) {
             <footer className='bg-orange-500 text-center
             
             text-zinc-50 p-0.5'>
-                <p>This a food project with SSR&SSG</p>
+                <p>This is a food project with SSR&SSG</p>
             </footer>
 
         </>
